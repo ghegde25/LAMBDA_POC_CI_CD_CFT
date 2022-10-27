@@ -16,5 +16,5 @@ phases:
   post_build:
     commands:
       - echo "Updating lambda Function..."
-      - aws lambda update-function-code --function-name Lambda_POC_CFT_Launch_Lambda --zip-file fileb://deployment_package.zip
+      - aws lambda update-function-code --function-name Lambda-POC-CICD --zip-file fileb://deployment_package.zip
       - echo "DONE!!"
